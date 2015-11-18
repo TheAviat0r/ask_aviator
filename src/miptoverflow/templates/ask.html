@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block head %}
+<div class="col-md-4">
+<h3 class="text-center"><strong>New question</strong></h3>
+</div>
+{% endblock %}
+
+{% block content %}
+<form class="form-horizontal">
+          
+            <div class="form-group">
+              <div class="form-group col-md-6">
+                <div class="alert alert-danger">
+                  <strong>Error!</strong>
+                </div>
+
+                <label for="exampleInputEmail1">Title</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+
+                <label for="commentSection" style="margin-top: 20px">Text</label>
+                <textarea class="form-control" id="commentSection" rows="10"></textarea>
+
+                <div style="margin-top: 20px">
+                  <label for="inputTags">Tags</label>
+                  <input type="email" class="form-control" id="inputTags" placeholder="Enter tags">
+                </div>
+
+                <div style="margin-top: 20px">
+                  <button type="button" class="btn btn-success">Ask</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+ {% endblock %}
